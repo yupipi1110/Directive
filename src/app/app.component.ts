@@ -19,5 +19,8 @@ export class AppComponent {
   //'!'演算子で真偽値を反転させる。
   toggleButtonVisibility() {
     this.isButtonVisible = !this.isButtonVisible;
+
+  //ここまでが構造ディレクティブ、以降は属性ディレクティブ
+
   }
 }
