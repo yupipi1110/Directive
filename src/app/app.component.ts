@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  
   watchNgIf = true;
 
-  items = ['Item 1', 'Item 2', 'Item 3'];
+  watchNgFors = ['Item 1', 'Item 2', 'Item 3'];
 
   value = 'C';
 }
