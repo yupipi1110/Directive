@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  
+
   watchNgIf = true;
 
   watchNgFors = ['Item 1', 'Item 2', 'Item 3'];
 
   value = 'A';
+
+  //ボタン表示/非表示
+  isButtonVisible = true;
+
+  //'!'演算子で真偽値を反転させる。
+  toggleButtonVisibility() {
+    this.isButtonVisible = !this.isButtonVisible;
+  }
 }
