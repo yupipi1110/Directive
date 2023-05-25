@@ -1,7 +1,9 @@
-<div *ngIf="watchNgIf">trueを設定しているので、このテキストが出力されます。</div>
+<div *ngIf="watchNgIf">
+  trueを設定しているので、このテキストが出力されます。
+</div>
 
 <ul>
-  <li *ngFor="let watchNgFor of watchNgFors">{{watchNgFor}}</li>
+  <li *ngFor="let watchNgFor of watchNgFors">{{ watchNgFor }}</li>
 </ul>
 
 <div [ngSwitch]="value">
@@ -12,12 +14,15 @@
 
 <p>以下のボタンを押下すると表示/非表示が切り替わります。</p>
 <button *ngIf="isButtonVisible" (click)="toggleButtonVisibility()">表示</button>
-<button *ngIf="!isButtonVisible" (click)="toggleButtonVisibility()">非表示</button>
+<button *ngIf="!isButtonVisible" (click)="toggleButtonVisibility()">
+  非表示
+</button>
 
-<!-- ここまで構造ディレクティブ、以降は属性ディレクティブ -->
-
+<!-- ng-container,ng-templateの仕様例 -->
 <div class="name-list">
+  <!-- 配列namesの存在チェックと要素数チェック、falseの場合ng-templateの#nameが実行される。 -->
   <ng-container *ngIf="names && names.length; else noName">
+    <!-- 配列namesの名前(name)と説明(description)を出力する。 -->
     <div *ngFor="let name of names">
       <h2>{{ name.name }}</h2>
       <p>{{ name.description }}</p>
@@ -28,6 +33,8 @@
     <p>nameリストが存在しないのでこのテキストが出力されます。</p>
   </ng-template>
 </div>
+
+<!-- ここまで構造ディレクティブ、以降は属性ディレクティブ -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

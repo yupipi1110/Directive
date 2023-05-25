@@ -20,10 +20,15 @@ export class AppComponent {
   toggleButtonVisibility() {
     this.isButtonVisible = !this.isButtonVisible;
   }
-  //ここまで構造ディレクティブ、以降は属性ディレクティブ
 
+  //便利タグ(応用知識)
+  //ng-container,ng-templateの仕様例
   names = [
     { name: '山田', description: '私は山田です。' },
     { name: '田中', description: '私は田中です。' },
   ];
+
+  //ここまで構造ディレクティブ、以降は属性ディレクティブ
+
+
 }
