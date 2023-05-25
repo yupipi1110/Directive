@@ -1,16 +1,23 @@
+<p class="title">ディレクティブ動作サンプル</p>
+
 <div *ngIf="watchNgIf">
-  trueを設定しているので、このテキストが出力されます。
+  ngIfのサンプルです。trueを設定しているので、このテキストが出力されます。
 </div>
 
 <ul>
   <li *ngFor="let watchNgFor of watchNgFors">{{ watchNgFor }}</li>
 </ul>
 
+<br />
+
+<p>ngForのサンプルです。</p>
 <div [ngSwitch]="value">
   <p *ngSwitchCase="'A'">Aを設定しているのでこのテキストが出力されます。</p>
   <p *ngSwitchCase="'B'">Bを設定しているのでこのテキストが出力されます。</p>
   <p *ngSwitchDefault>その他を設定しているのでこのテキストが出力されます。</p>
 </div>
+
+<br />
 
 <p>以下のボタンを押下すると表示/非表示が切り替わります。</p>
 <button *ngIf="isButtonVisible" (click)="toggleButtonVisibility()">表示</button>
@@ -50,6 +57,14 @@
 <div [ngClass]="{ on: styleOnOff }">
   ngClassの使用例です。<br />
   この要素に対してスタイルの適応を切り替えることができます。
+</div>
+
+<br />
+
+<!-- この機能はカスタムディレクティブで実装している。 -->
+<div myDirective>
+  マウスを乗せてください。<br />
+  マウスを乗せている間はこの要素に対して背景色に黄色が適応されます。
 </div>
 
 <!-- 
