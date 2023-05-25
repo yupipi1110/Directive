@@ -1,7 +1,7 @@
 <p class="title">ディレクティブ動作サンプル</p>
 
 <div *ngIf="watchNgIf">
-  ngIfのサンプルです。trueを設定しているので、このテキストが出力されます。
+  ngIfの使用例です。trueを設定しているので、このテキストが出力されます。
 </div>
 
 <ul>
@@ -10,7 +10,7 @@
 
 <br />
 
-<p>ngForのサンプルです。</p>
+<p>ngForの使用例です。</p>
 <div [ngSwitch]="value">
   <p *ngSwitchCase="'A'">Aを設定しているのでこのテキストが出力されます。</p>
   <p *ngSwitchCase="'B'">Bを設定しているのでこのテキストが出力されます。</p>
@@ -25,6 +25,9 @@
   非表示
 </button>
 
+<br />
+<br />
+<p>ng-container,ng-templateを使用して配列の要素を出力しています。</p>
 <!-- ng-container,ng-templateの仕様例 -->
 <div class="name-list">
   <!-- 配列namesの存在チェックと要素数チェック、falseの場合ng-templateの#nameが実行される。 -->
@@ -43,12 +46,14 @@
 
 <!-- ここまで構造ディレクティブ、以降は属性ディレクティブ -->
 
+<br />
+<p>ngStyleで以下の要素に対してスタイルを付与している。</p>
 <!-- ngStyleで以下の要素に対してスタイルを付与している。 -->
 <div [ngStyle]="{ 'background-color': color }">
   ngStyleでこの要素に対して背景色を付与しています。
 </div>
 <br />
-
+<br />
 <!-- ngClassでテキストに対してスタイルの適応を切り替えることができます。 -->
 <button class="ngClass-button" (click)="toggleClass()">
   ngClass動作確認ボタン
@@ -61,6 +66,7 @@
 
 <br />
 
+<p>以下の機能はカスタムディレクティブで実装しています。</p>
 <!-- この機能はカスタムディレクティブで実装している。 -->
 <div myDirective>
   マウスを乗せてください。<br />
