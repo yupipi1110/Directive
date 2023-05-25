@@ -19,12 +19,11 @@ export class AppComponent {
   //'!'演算子で真偽値を反転させる。
   toggleButtonVisibility() {
     this.isButtonVisible = !this.isButtonVisible;
-
-    //ここまでが構造ディレクティブ、以降は属性ディレクティブ
-
-    let name = [
-      { name: '山田', description: '私は山田です。' },
-      { name: '田中', description: '私は田中です。' },
-    ];
   }
+  //ここまでが構造ディレクティブ、以降は属性ディレクティブ
+
+  names = [
+    { name: '山田', description: '私は山田です。' },
+    { name: '田中', description: '私は田中です。' },
+  ];
 }
