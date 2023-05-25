@@ -40,10 +40,17 @@
 <div [ngStyle]="{ 'background-color': color }">
   ngStyleでこの要素に対して背景色を付与しています。
 </div>
+<br />
 
+<!-- ngClassでテキストに対してスタイルの適応を切り替えることができます。 -->
+<button class="ngClass-button" (click)="toggleClass()">
+  ngClass動作確認ボタン
+</button>
 
-
-
+<div [ngClass]="{ on: styleOnOff }">
+  ngClassの使用例です。<br />
+  この要素に対してスタイルの適応を切り替えることができます。
+</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

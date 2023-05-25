@@ -81,6 +81,14 @@ input[type="text"] {
   padding: .5rem;
 }
 
+.on {
+  color: red;
+}
+
+.ngClass-button{
+  width: 220px;
+  height: 50px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

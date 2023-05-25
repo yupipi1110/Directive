@@ -32,4 +32,10 @@ export class AppComponent {
 
   //ngStyleで以下の要素に対してスタイルを付与している。
   color = 'pink';
+
+  styleOnOff = false;
+  toggleClass() {
+    this.styleOnOff = !this.styleOnOff;
+  }
+
 }
