@@ -20,7 +20,7 @@ export class AppComponent {
   toggleButtonVisibility() {
     this.isButtonVisible = !this.isButtonVisible;
   }
-  //ここまでが構造ディレクティブ、以降は属性ディレクティブ
+  //ここまで構造ディレクティブ、以降は属性ディレクティブ
 
   names = [
     { name: '山田', description: '私は山田です。' },
