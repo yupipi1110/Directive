@@ -30,5 +30,6 @@ export class AppComponent {
 
   //ここまで構造ディレクティブ、以降は属性ディレクティブ
 
-
+  //ngStyleで以下の要素に対してスタイルを付与している。
+  color = 'pink';
 }
