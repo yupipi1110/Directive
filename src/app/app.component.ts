@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  //ここから構造ディレクティブ
+  //構造ディレクティブ
   watchNgIf = true;
 
   watchNgFors = ['Item 1', 'Item 2', 'Item 3'];
